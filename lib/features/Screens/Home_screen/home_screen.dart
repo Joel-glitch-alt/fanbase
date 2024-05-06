@@ -56,6 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 // Handle profile icon tap
                 // print('Gooooo');
+                Navigator.pushNamed(context, '/profile');
               },
               icon: const Icon(
                 Icons.account_circle,

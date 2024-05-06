@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:fanbase/widgets/global.dart';
+import 'package:fanbase/features/widgets/global.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:video_player/video_player.dart';

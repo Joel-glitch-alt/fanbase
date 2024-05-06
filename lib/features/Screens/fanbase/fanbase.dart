@@ -78,11 +78,12 @@ class _FanBaseState extends State<FanBase> {
             IconButton(
               onPressed: () {
                 // Handle profile icon tap
-                // print('Gooooo');
+                //print('Gooooo');
+                Navigator.pushNamed(context, '/contestants');
               },
               icon: const Icon(
                 Icons.account_circle,
-                color: Colors.white,
+                color: Colors.green,
               ),
             ),
           ],

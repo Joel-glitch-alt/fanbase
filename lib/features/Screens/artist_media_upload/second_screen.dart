@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:fanbase/Screens/artist_media_upload/upload_form.dart';
+import 'package:fanbase/features/Screens/artist_media_upload/upload_form.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -105,6 +105,13 @@ class _SecondScreenState extends State<SecondScreen> {
     return Scaffold(
       backgroundColor: Colors.grey,
       body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage(
+                'https://images.unsplash.com/photo-1505968409348-bd000797c92e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D'),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

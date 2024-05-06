@@ -25,6 +25,7 @@ class ContestantsPage extends StatelessWidget {
               ),
               onPressed: () {
                 // Implement search functionality
+                Navigator.pushNamed(context, '/gifts');
               },
             ),
             IconButton(

@@ -15,7 +15,9 @@ class ProfileScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/playerinfo');
+            },
             icon: const Icon(Icons.account_circle),
           ),
         ],
