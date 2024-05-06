@@ -21,11 +21,10 @@ class ContestantsPage extends StatelessWidget {
             IconButton(
               icon: const Icon(
                 Icons.search,
-                color: Colors.white,
+                color: Colors.green,
               ),
               onPressed: () {
                 // Implement search functionality
-                Navigator.pushNamed(context, '/gifts');
               },
             ),
             IconButton(
@@ -36,6 +35,8 @@ class ContestantsPage extends StatelessWidget {
               ),
               onPressed: () {
                 // Navigate to profile screen
+                // Navigator.pushNamed(context, '/gifts');
+                print('bbbbbbbbbbbb');
               },
             ),
           ],

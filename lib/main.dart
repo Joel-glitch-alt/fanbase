@@ -9,6 +9,7 @@ import 'package:fanbase/features/Screens/extras/player_info.dart';
 import 'package:fanbase/features/Screens/fanbase/fanbase.dart';
 import 'package:fanbase/features/Screens/fanbase/thirdvideo.dart';
 import 'package:fanbase/features/Screens/fanbase/video_two.dart';
+import 'package:fanbase/features/Screens/splash_screen/splash_screen.dart';
 import 'package:fanbase/features/Screens/subscription/subscription.dart';
 import 'package:fanbase/features/Screens/voting/voting.dart';
 import 'package:flutter/material.dart';
@@ -40,17 +41,20 @@ class MyApp extends StatelessWidget {
       // CloudinaryVideos()
       // ThirdVideoPlayer(),
       //VideoPlayer(),
+      initialRoute: '/splash', // Set initial route to splash screen
+
       routes: {
-        '/': (context) => HomeScreen(),
-        '/profile': (context) => ProfileScreen(),
-        '/playerinfo': (context) => PlayerInfo(),
-        '/subscription': (context) => SubscriptionScreen(),
-        '/voting': (context) => VotingScreen(),
-        '/collection': (context) => CollectionScreen(),
-        '/fanbase': (context) => FanBase(),
+        '/splash': (context) => SplashScreen(), // Define splash screen route
+        '/': (context) => const ProfileScreen(),
+        '/home': (context) => const HomeScreen(),
+        '/playerinfo': (context) => const PlayerInfo(),
+        '/subscription': (context) => const SubscriptionScreen(),
+        '/voting': (context) => const VotingScreen(),
+        '/collection': (context) => const CollectionScreen(),
+        '/fanbase': (context) => const FanBase(),
         '/contestants': (context) => ContestantsPage(),
-        '/gifts': (context) => GiftScreen(),
-        '/artist': (context) => SecondScreen(),
+        '/gifts': (context) => const GiftScreen(),
+        '/artist': (context) => const SecondScreen(),
       },
     );
   }
